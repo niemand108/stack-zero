@@ -1,0 +1,11 @@
+OUTPUT_FORMAT(elf64-x86-64)
+
+SB_START = 0x700000000000;      
+
+SECTIONS
+{
+
+        . = SB_START;
+        .text : { *(.text) }
+
+}
